@@ -18,7 +18,7 @@ class Genre
   end
 
   def songs
-    @songs
+    Song.all.collect {|song| song.genre == self}
   end
 
   def artists
