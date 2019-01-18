@@ -30,4 +30,8 @@ class Artist
     self.songs.collect {|song| song.genre}
   end
 
+  def new_song
+    song = Song.new(name)
+  end
+
 end
