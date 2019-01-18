@@ -13,6 +13,10 @@ class Genre
     @songs << song
   end
 
+  def self.all
+    @@all
+  end
+  
   def songs
     @songs
   end
